@@ -1,12 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index page should render 1`] = `
-<div>
-  <h1>
-    Hello!
-  </h1>
-  <p>
-    I’m Roman and this is my personal website
-  </p>
-</div>
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h1>
+        hello,
+        <br />
+        roman
+      </styled.h1>
+      <styled.p>
+        Front-end developer & creative copywriter sounds like crazy fusion for you? It should probably. But if you’re looking for someone who knows how to connect innovative ideas with technology, then your should definitely click 
+        <a
+          href="#"
+        >
+          here.
+        </a>
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <img
+        src="test-file-stub"
+      />
+      <img
+        src="test-file-stub"
+      />
+    </styled.div>
+  </styled.div>
+</styled.div>
 `;
