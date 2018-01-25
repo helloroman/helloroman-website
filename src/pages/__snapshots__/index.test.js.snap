@@ -3,18 +3,10 @@
 exports[`Index page should render 1`] = `
 <div>
   <h1>
-    Hi people
+    Hello!
   </h1>
   <p>
-    Welcome to your new Gatsby site.
+    I’m Roman and this is my personal website
   </p>
-  <p>
-    Now go build something great.
-  </p>
-  <GatsbyLink
-    to="/page-2/"
-  >
-    Go to page 2
-  </GatsbyLink>
 </div>
 `;
