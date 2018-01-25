@@ -1,0 +1,78 @@
+{
+  "name": "helloroman",
+  "description": "helloroman website",
+  "version": "1.0.0",
+  "author": "Adam Romanski <adam.romanski90@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-image": "^1.0.34",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-react-next": "^1.0.8",
+    "gatsby-plugin-resolve-src": "^1.0.0",
+    "gatsby-plugin-styled-components": "^2.0.5",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "styled-components": "^3.0.2",
+    "styled-media-query": "^2.0.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "test": "jest ./src",
+    "lint": "yarn eslint 'src/**/*.js'"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          "env",
+          "react",
+          "stage-3"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.16.0",
+    "eslint-config-last": "^0.0.5",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "15.6.1"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "transform": {
+      ".*": "babel-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg)$": "<rootDir>/test/fileMock.js"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}

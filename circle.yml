@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 8.5.0
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    PUBLIC_URL: /
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+test:
+  override:
+    - echo "done"
+deployment:
+  staging:
+    branch: master
+    commands:
+      - yarn build
+      - AWS_ACCESS_KEY_ID=$STAGING_AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$STAGING_AWS_SECRET_ACCESS_KEY_ID aws s3 sync public s3://$STAGING_AWS_BUCKET_NAME --acl public-read --delete
