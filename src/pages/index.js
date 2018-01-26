@@ -32,10 +32,11 @@ const IndexPage = () => (
           hello,<br />roman
         </H1>
         <Paragraph>
-          Front-end developer & creative copywriter sounds like crazy fusion for
-          you? It should probably. But if you’re looking for someone who knows
-          how to connect innovative ideas with technology, then your should
-          definitely click <a href="#">here.</a>
+          Front-end developer & creative copywriter sounds like a crazy
+          connection to you? It should probably. But if you’re looking for
+          someone who knows how to connect innovative ideas with technology,
+          then you should definitely click{' '}
+          <a href="mailto:adamdopisuje@gmail.com">here.</a>
         </Paragraph>
       </TextWrapper>
       <BlobWrapper>
